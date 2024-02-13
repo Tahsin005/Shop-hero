@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cmyk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Hero</title>
+    <link rel="icon" href="">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="bg-[#1A187A] fixed top-0 z-10">
+            <div class="navbar  px-8 md:px-24 py-2 flex justify-center">
+                <div class="navbar-start me-10">
+                    <img class="" src="./resources/Group 2.png" alt="Shop Hero">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search" class="input input-bordered w-16 lg:w-auto" />
+                    </div>
+                    <div class="menu menu-horizontal px-1 text-white">
+                        <li><a href="#carousel_">Home</a></li>
+                        <li><a>About</a></li>
+
+                        <li><a href="#footer_">Contact Us</a></li>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <!-- cart -->
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle hidden lg:block md:pt-3 me-3">
+                        <i class="fa-solid fa-cart-shopping" style="color: #fafafa;"></i>
+                    </div>
+                    <!-- cart -->
+
+                    <!-- icon -->
+                    <div class="dropdown dropdown-end hidden lg:block ms-3">
+                        <i class="fa-regular fa-user" style="color: #ffffff;"></i>
+                    </div>
+                    <!-- icon -->
+
+
+                    <!-- last part -->
+                    <div class="dropdown lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-close-white btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box ">
+                            <div>
+                                <li><a href="#carousel_">Home</a></li>
+                                <li><a>About</a></li>
+
+                                <li><a href="#footer_">Contact Us</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <!-- last part -->
+                </div>
+            </div>
+        </nav>
+        <!-- navbar -->
+        <!-- carousel -->
+        <div class="carousel w-full bg-[#A1A0FD] overflow-x-auto overflow-y-hidden mt-[88px]" id="carousel_">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full h-auto">
+
+                <div class="testing flex  flex-col md:flex-row md:px-24  md:w-full md:h-[512px] justify-around gap-10">
+                    <!-- text -->
+                    <div class=" md:pt-24 md:w-2/3 text-center lg:text-start md:ps-12 flex-grow mt-28 md:mt-10">
+                        <p class="">Pro.Beyond.</p>
+                        <h2 class="text-5xl md:text-6xl lg:text-8xl font-bold ">IPhone 14 Pro</h2>
+                        <p>Created to change everything for the better. For everyone</p>
+
+                        <button class="btn bg-[#1A187A] text-white hidden md:block">Shop Now</button>
+                    </div>
+                    <!-- img -->
+                    <div class="  items-end text-center lg:text-end mt-auto">
+                        <img class=" h-auto" src="./resources/cut.png" class="w-full" />
+                    </div>
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full h-auto">
+
+                <div class="testing flex  flex-col md:flex-row md:px-24  md:w-full md:h-[512px] justify-around gap-10">
+                    <!-- text -->
+                    <div class=" md:pt-24 md:w-2/3 text-center lg:text-start md:ps-12 flex-grow mt-28 md:mt-10">
+                        <p class="">Pro.Beyond.</p>
+                        <h2 class="text-5xl md:text-6xl lg:text-8xl font-bold ">Apple Watch Ultra</h2>
+                        <p>Created to change everything for the better. For everyone</p>
+
+                        <button class="btn bg-[#1A187A] text-white hidden md:block">Shop Now</button>
+                    </div>
+                    <!-- img -->
+                    <div class="  items-end text-center lg:text-end mt-auto">
+                        <img class=" h-auto" src="./resources/Iphone 14 pro 1-1.png" class="w-full" />
+                    </div>
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full h-auto">
+
+                <div class="testing flex  flex-col md:flex-row md:px-24  md:w-full md:h-[512px] justify-around gap-10">
+                    <!-- text -->
+                    <div class=" md:pt-24 md:w-2/3 text-center lg:text-start md:ps-12 flex-grow mt-28 md:mt-10">
+                        <p class="">Pro.Beyond.</p>
+                        <h2 class="text-5xl md:text-6xl lg:text-8xl font-bold ">Ipad 9</h2>
+                        <p>Created to change everything for the better. For everyone</p>
+
+                        <button class="btn bg-[#1A187A] text-white hidden md:block">Shop Now</button>
+                    </div>
+                    <!-- img -->
+                    <div class="  items-end text-center lg:text-end mt-auto">
+                        <img class=" h-auto" src="./resources/ipad.png" class="w-full" />
+                    </div>
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <div class="grid grid-cols-1 lg:grid-cols-2 bg-[#D2D2DA]">
+            <div>
+                <div class="bg-base-100">
+                    <div class="card card-side bg-base-100 block md:flex">
+                        <figure><img class="uppercase" src="./resources/ipad.png" alt="IPAD 9" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-[49px] mb-5">Ipad 9</h2>
+                            <p>iPad 9: Powerful performance, stunning display. Multitask with ease, enjoy vibrant visuals. Versatile and intuitive for all your needs.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ADC2D7]">
+                    <div class="card card-side bg-[#ADC2D7] flex">
+                        <div class="w-1/3 flex items-center">
+                            <figure><img class=" my-auto " src="./resources/hero__gnfk5g59t0qe_xlarge_2x 1.png"
+                                    alt="Movie" /></figure>
+                        </div>
+                        <div class="card-body flex-1 w-2/3">
+                            <h2 class="card-title">Airpod Max</h2>
+                            <p>AirPods Max: Premium sound, luxurious comfort. Active noise cancellation, spatial audio, and Siri control. Elevate your listening experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#D2D2DA] grid grid-cols-1 md:grid-cols-2 my-auto">
+                <div class="card w-auto md:w-96 bg-[#D2D2DA] ">
+                    <div class="card-body justify-center items-center">
+                        <h2 class="card-title mt-14 text-5xl">MacBook Air</h2>
+                        <p class=" mt-7">MacBook Air: Sleek design, lightweight powerhouse. Stunning Retina display, powerful M1 chip. Unmatched performance for work and play.
+                            <br>
+
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-md mt-8 bg-[#27448E] text-white">Buy
+                                Now</button>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="pt-10 w-1/2 m-auto  md:w-full">
+                    <img class="w-auto h-auto" src="./resources/Group 6.png" alt="MacBook Air" />
+                </div>
+            </div>
+        </div>
+
+        <!-- browse by category -->
+        <div class="flex max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <div class="text-3xl text-start flex-1">Browse by caterories</div>
+            <div class="text-end text-3xl flex-1">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div
+            class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+            <div class="bg-gray-400 text-center h-32 pt-12 rounded-lg">
+                <i class="fa fa-mobile-phone text-5xl"></i>
+            </div>
+            <div class="bg-gray-400 text-center h-32  rounded-lg justify-center">
+                <i class="material-icons pt-12" style="font-size:48px;color:black">watch</i>
+            </div>
+            <div class="bg-gray-400 text-center h-32 pt-12 rounded-lg">
+                <i class="fa-solid fa-camera text-5xl"></i>
+            </div>
+            <div class="bg-gray-400 text-center h-32 pt-12 rounded-lg">
+                <i class="fa-solid fa-headphones-simple text-5xl" style="color: #04122a;"></i>
+            </div>
+            <div class="bg-gray-400 text-center h-32 pt-12 rounded-lg">
+                <i class="fa-solid fa-computer text-5xl"></i>
+            </div>
+            <div class="bg-gray-400 text-center h-32 pt-12 rounded-lg">
+                <i class="fa-solid fa-gamepad text-5xl" style="color: #020812;"></i>
+            </div>
+        </div>
+
+        <!-- new arrival -->
+        <section class="max-w-screen-xl mx-auto px-[10px] md:px-[70px] lg:px-[70px] py-5 my-10">
+            <ul class="menu menu-horizontal">
+                <li><a>New Arrival</a></li>
+                <li><a>Best Seller</a></li>
+                <li><a>Featurd Product</a></li>
+            </ul>
+
+            <div class="">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card card-compact bg-base-100 h-[456px] w-full shadow-2xl ">
+                        <div class="rating gap-1 justify-end pt-5">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-700" />
+                        </div>
+                        <figure><img class="h-[160px] w-[160px]" src="./resources/Iphone 14 pro 1-2.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-center text-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple
+                                (MQ9T3RX/A)</h2>
+                            <p class="text-3xl font-bold text-center">$900</p>
+                            <div class="card-actions justify-center">
+                                <button class="btn bg-black text-white">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 h-[456px] w-full shadow-2xl ">
+                        <div class="rating gap-1 justify-end pt-5">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-700" />
+                        </div>
+                        <figure><img class="h-[160px] w-[160px]" src="./resources/Iphone 14 pro 1-3.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-center text-[16px]">Blackmagic Pocket Cinema Camera 6k</h2>
+                            <p class="text-3xl font-bold text-center">$2535</p>
+                            <div class="card-actions justify-center">
+                                <button class="btn bg-black text-white">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 h-[456px] w-full shadow-2xl ">
+                        <div class="rating gap-1 justify-end pt-5">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-700" />
+                        </div>
+                        <figure><img class="h-[160px] w-[160px]" src="./resources/Iphone 14 pro 1-1.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-center text-[16px]">Apple Watch Series 9 GPS 41mm Starlight
+                                Aluminium Case</h2>
+                            <p class="text-3xl font-bold text-center">$399</p>
+                            <div class="card-actions justify-center">
+                                <button class="btn bg-black text-white">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 h-[456px] w-full shadow-2xl ">
+                        <div class="rating gap-1 justify-end pt-5">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-700" />
+                        </div>
+                        <figure><img class="h-[160px] w-[160px]" src="./resources/hero__gnfk5g59t0qe_xlarge_2x 1.png"
+                                alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-center text-[16px]  ps-12">AirPods Max Silver
+                            </h2>
+                            <p class="text-3xl font-bold text-center">$549</p>
+                            <div class="card-actions justify-center">
+                                <button class="btn bg-black text-white">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-3 bg-[#958AD4] justify-evenly">
+            <div class=" w-2/3">
+                <img src="./resources/cut_.png" alt="">
+            </div>
+            <div class="text-center my-auto">
+                <h1 class="font-bold text-5xl mb-5">11.11 SALE</h1>
+                <p class="px-4"> Don't miss out on massive discounts! Shop now for incredible savings on a wide range of products.</p>
+            </div>
+            <div class="ps-56 pt-24">
+                <img src="./resources/jbl_jr_310bt_blue 1.png" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer p-10 bg-[#000000] text-white grid grid-cols-1 md:grid-cols-4" id="footer_">
+        <nav>
+            <div class="navbar-start ">
+                <img class="w-full" src="./resources/Group 2.png" alt="Shop Hero">
+            </div>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Social</h6>
+            <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg></a>
+            </div>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Bonus program</a>
+            <a class="link link-hover">Gift cards</a>
+            <a class="link link-hover">Credit and payment</a>
+            <a class="link link-hover">Service contracts</a>
+            <a class="link link-hover">Non-cash account</a>
+            <a class="link link-hover">Payment</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Assistance to the buyer</h6>
+            <a class="link link-hover">Find an order</a>
+            <a class="link link-hover">Terms of delivery</a>
+            <a class="link link-hover">Exchange and return of goods</a>
+            <a class="link link-hover">Guarantee</a>
+            <a class="link link-hover">Frequently asked questions</a>
+            <a class="link link-hover">Terms of use of the site</a>
+        </nav>
+
+    </footer>
+</body>
+
+</html>
